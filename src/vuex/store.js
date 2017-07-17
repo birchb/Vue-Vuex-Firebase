@@ -12,5 +12,10 @@ export default new Vuex.Store({
   mutations: VuexFire.mutations,
   modules: {
     messages
+  },
+  getters: {
+    getMessages: state => {
+      return state.messages
+    }
   }
 })
